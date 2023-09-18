@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('imagenes/pexels-joshua-slate-594579.jpg');
+        background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+        background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+        background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+    
+}
+
+.playlist {
+    background-color: #ffeaeb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.952);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ff595e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #ff595e;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    color: #ff0000;
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ff595e;
+    border-radius: 5px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.heart-button {
+    background-color: transparent;
+    border: none;
+    color: #f00;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.heart-button::before {
+    content: "\2665"; /* Código Unicode para el símbolo del corazón */
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-size: 24px;
+    color: #f00;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart-button:hover::before {
+    transform: scale(1.2);
+}
+
+/* Cambia el color de fondo al pasar el mouse
+a href="pacman/pacma.html"><button>Pacman</button></a>
+a href="peliculas/peliculas.html"><button>Peliculas</button></a>
+a href="amor/amor.html"><button>Me amas??</button></a> */
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.ar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f34f4f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.heart-ar {
+    background-color: transparent;
+    border: none;
+    color: #f00;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.heart-ar::before {
+    content: "\2665"; /* Código Unicode para el símbolo del corazón */
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-size: 24px;
+    color: #f00;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart-ar:hover::before {
+    transform: scale(1.2);
+}
+.ar:hover {
+    background-color: #0056b3;
+}
